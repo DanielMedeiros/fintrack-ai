@@ -4,7 +4,7 @@ Plataforma de gestão financeira pessoal inteligente. Projeto Full Stack TypeScr
 
 ## Stack inicial
 
-- Node.js 26 LTS
+- Node.js 22 LTS ou superior
 - pnpm Workspaces + Turborepo
 - Next.js + React + TypeScript
 - NestJS + Fastify
@@ -14,7 +14,7 @@ Plataforma de gestão financeira pessoal inteligente. Projeto Full Stack TypeScr
 
 ## Pré-requisitos
 
-- Node.js 26 ou superior
+- Node.js 22 LTS ou superior
 - pnpm 10 ou superior
 - Docker Engine / Docker Desktop com Docker Compose
 
@@ -83,6 +83,13 @@ infrastructure Docker and future cloud/IaC resources
 ## Health check
 
 `GET /api/v1/health` retorna status básico da API. Nesta fase, o endpoint não verifica dependências externas; health/readiness checks de PostgreSQL e Redis serão adicionados quando a camada de infraestrutura da aplicação for implementada.
+
+## CI/CD
+
+O repositório possui integração contínua via **GitHub Actions** em [`.github/workflows/ci.yml`](.github/workflows/ci.yml) disparado em pushes e pull requests na branch `main`:
+- **Lint, Typecheck & Format:** Prettier (`format:check`), ESLint (`lint`) e TypeScript (`typecheck`).
+- **Build:** Compilação dos apps e pacotes com Turborepo (`build`).
+- **Smoke Test de Infraestrutura:** Validação de inicialização e healthcheck dos contêineres Docker (PostgreSQL 17 e Redis 7).
 
 ## Segurança
 
