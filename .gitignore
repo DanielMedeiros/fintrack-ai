@@ -8,3 +8,6 @@ coverage/
 !.env.example
 .DS_Store
 *.log
+*.tsbuildinfo
+package-lock.json
+yarn.lock

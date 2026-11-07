@@ -1,6 +1,6 @@
 # AGENTS.md — FinTrack AI Agent Guidelines & Skill Orchestration
 
-Este documento define o guia de operação, regras de conduta, arquitetura e orquestração de **Agentes de IA** no repositório do **FinTrack AI**. 
+Este documento define o guia de operação, regras de conduta, arquitetura e orquestração de **Agentes de IA** no repositório do **FinTrack AI**.
 
 Todos os agentes autônomos ou assistentes de código que operam neste projeto devem obrigatoriamente seguir as diretrizes descritas neste arquivo e carregar as **skills especializadas** localizadas no diretório [`skills`](file:///e:/Projetos_Pessoais/FINTRACK_IA/fintrack-ai/.agents/skills) conforme o contexto de cada tarefa.
 
@@ -23,9 +23,9 @@ O **FinTrack AI** é uma plataforma SaaS de gestão financeira pessoal de alta p
 
 Na pasta [`.agents/skills`](file:///e:/Projetos_Pessoais/FINTRACK_IA/fintrack-ai/.agents/skills) estão definidas as diretrizes sênior de engenharia:
 
-| Skill | Localização | Especialidade Principal | Gatilhos de Uso |
-| :--- | :--- | :--- | :--- |
-| **`nodejs-senior`** | [`.agents/skills/nodejs-senior/SKILL.md`](file:///e:/Projetos_Pessoais/FINTRACK_IA/fintrack-ai/.agents/skills/nodejs-senior/SKILL.md) | Backend, Node.js, NestJS, APIs, Bancos de Dados, Filas, Concorrência, Segurança e Resiliência | APIs REST, regras de negócio do backend, persistência com Prisma, jobs BullMQ, RabbitMQ, autenticação/tokens, rate limiting, logs estruturados (Pino), testes de integração e unitários do backend. |
+| Skill                  | Localização                                                                                                                                 | Especialidade Principal                                                                          | Gatilhos de Uso                                                                                                                                                                                              |
+| :--------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **`nodejs-senior`**    | [`.agents/skills/nodejs-senior/SKILL.md`](file:///e:/Projetos_Pessoais/FINTRACK_IA/fintrack-ai/.agents/skills/nodejs-senior/SKILL.md)       | Backend, Node.js, NestJS, APIs, Bancos de Dados, Filas, Concorrência, Segurança e Resiliência    | APIs REST, regras de negócio do backend, persistência com Prisma, jobs BullMQ, RabbitMQ, autenticação/tokens, rate limiting, logs estruturados (Pino), testes de integração e unitários do backend.          |
 | **`front-end-senior`** | [`.agents/skills/front-end-senior/SKILL.md`](file:///e:/Projetos_Pessoais/FINTRACK_IA/fintrack-ai/.agents/skills/front-end-senior/SKILL.md) | Frontend, Next.js (App Router), React 19, TypeScript, UI/UX, Acessibilidade (WCAG) e Performance | Telas, componentes visuais, formulários com Zod/RHF, gerenciamento de estado (TanStack Query/Zustand), Server vs. Client Components, Tailwind CSS, shadcn/ui, Core Web Vitals, testes com Vitest/Playwright. |
 
 ---
@@ -87,4 +87,3 @@ Sempre que implementar ou revisar código, organize a entrega na seguinte estrut
 3. **Implementação:** Código limpo, completo e pronto para uso (indicando caminhos dos arquivos e importações necessárias).
 4. **Testes e Validação:** Cenários cobertos e passos para execução dos testes.
 5. **Riscos, Segurança e Operação:** Aspectos de segurança, acessibilidade, observabilidade e impacto operacional.
-

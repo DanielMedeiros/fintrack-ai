@@ -105,4 +105,3 @@ jobs:
       - name: Teardown infrastructure
         if: always()
         run: docker compose down -v
-

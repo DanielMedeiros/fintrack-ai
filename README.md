@@ -87,6 +87,7 @@ infrastructure Docker and future cloud/IaC resources
 ## CI/CD
 
 O repositório possui integração contínua via **GitHub Actions** em [`.github/workflows/ci.yml`](.github/workflows/ci.yml) disparado em pushes e pull requests na branch `main`:
+
 - **Lint, Typecheck & Format:** Prettier (`format:check`), ESLint (`lint`) e TypeScript (`typecheck`).
 - **Build:** Compilação dos apps e pacotes com Turborepo (`build`).
 - **Smoke Test de Infraestrutura:** Validação de inicialização e healthcheck dos contêineres Docker (PostgreSQL 17 e Redis 7).
