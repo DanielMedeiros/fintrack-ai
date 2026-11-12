@@ -20,7 +20,11 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "verbatimModuleSyntax": false,
-    "noEmit": false
+    "noEmit": false,
+    "paths": {
+      "@fintrack/database": ["../../packages/database/src/index.ts"],
+      "@fintrack/contracts": ["../../packages/contracts/src/index.ts"]
+    }
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist", "test"]

@@ -2,6 +2,7 @@
 
 Este diretório reúne a visão arquitetural, diagramas e contratos técnicos do FinTrack AI.
 
-- `../adr/`: decisões arquiteturais registradas.
-- `../security/`: políticas e decisões de segurança.
-- `../api/`: contratos e documentação de API.
+- [`solution-blueprint.md`](./solution-blueprint.md): Solution Blueprint v1.0 (Baseline de Arquitetura).
+- `../adr/`: Decisões arquiteturais registradas.
+- `../security/`: Políticas e decisões de segurança.
+- `../api/`: Contratos e documentação de API.
